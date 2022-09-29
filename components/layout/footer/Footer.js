@@ -11,15 +11,15 @@ const Footer = () => {
           name: "About Us",
         },
         {
-          link: "/faq",
+          link: "/",
           name: "FAQ",
         },
         {
-          link: "/policy",
+          link: "/",
           name: "Policy",
         },
         {
-          link: "/terms-condition",
+          link: "/",
           name: "Condition",
         },
       ],
