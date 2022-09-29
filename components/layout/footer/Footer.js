@@ -45,34 +45,13 @@ const Footer = () => {
         },
       ],
     },
-    {
-      title: "My Account",
-      links: [
-        {
-          link: "/dashboard",
-          name: "Dashboard",
-        },
-        {
-          link: "/orders",
-          name: "My Orders",
-        },
-        {
-          link: "/profile",
-          name: "Updated Profile",
-        },
-        {
-          link: "/password",
-          name: "Change Password",
-        },
-      ],
-    },
   ];
   return (
     <div className="bg-gray-50 py-4 border-t-2">
       <div className="container mx-auto px-2">
-        <div className="grid grid-cols-2 md:grid-cols-7 xl:grid-cols-12 gap-5 sm:gap-9 lg:gap-11 xl:gap-7 py-10 justify-between">
+        <div className="grid grid-cols-2 px-5 md:grid-cols-7 xl:grid-cols-12 gap-5 sm:gap-9 lg:gap-11 xl:gap-7 py-10 justify-between">
           {Links.map((l, i) => (
-            <div key={i} className="pb-3.5 sm:pb-0 col-span-1 md:col-span-2 lg:col-span-3">
+            <div key={i} className="pb-3.5 sm:pb-0 col-span-1 md:col-span-2 lg:col-span-4">
               <h3 className="text-md lg:leading-7 font-medium mb-4 sm:mb-5 lg:mb-6 pb-0.5">
                 {l.title}
               </h3>
@@ -91,7 +70,7 @@ const Footer = () => {
             </div>
           ))}
 
-          <div className="pb-3.5 sm:pb-0 col-span-1 md:col-span-2 lg:col-span-3">
+          <div className="pb-3.5 sm:pb-0 col-span-6 md:col-span-2 lg:col-span-4">
             <Link href="/">
               <img className="w-2/4 object-contain h-12" src="/logo.png" alt="logo" />
             </Link>
