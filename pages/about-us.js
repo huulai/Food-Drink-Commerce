@@ -18,7 +18,7 @@ const AboutUs = () => {
                 <div className="mt-3 text-base opacity-90 leading-7">
                   <p>
                     Holisticly seize parallel metrics and functional ROI. Seamlessly revolutionize
-                    error-free internal or "organic" sources before effective scenarios.
+                    error-free internal or &quot;organic&quot; sources before effective scenarios.
                     Progressively incentivize state of the art applications for efficient
                     intellectual capital. Credibly leverage existing distinctive mindshare through
                     cutting-edge schemas. Proactively procrastinate team building paradigms
