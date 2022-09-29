@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "swiper/css";
+@import "swiper/css/free-mode";
+@import "swiper/css/pagination";
+@import "swiper/css/navigation";
+
+.cateSub {
+  bottom: -7.9rem;
+  transition: 0.5s linear;
+}
+
+.cate:hover .cateSub {
+  bottom: 0;
+  transition: 0.3s linear;
+}
+
+.flex-colo {
+  @apply flex justify-center items-center flex-col;
+}
+
+.drawer {
+  @apply fixed overflow-visible;
+  z-index: 999;
+  width: 100%;
+}
+
+.drawer.drawer-open {
+  transition: transform 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86);
+}
+
+.drawer-open {
+  width: 100%;
+  height: 100%;
+}
+
+.drawer-right {
+  top: 0;
+  right: 0;
+}
+
+.drawer.drawer-open .drawer-mask {
+  opacity: 0.3;
+  height: 100%;
+  transition: opacity 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86);
+}
+
+.drawer .drawer-mask {
+  background: #000;
+  opacity: 0;
+  width: 100%;
+  height: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86), height 0s ease 0.3s;
+}
+
+.drawer-right.drawer-open .drawer-content-wrapper {
+  box-shadow: -2px 0 8px rgb(0 0 0 / 15%);
+}
+
+@media (min-width: 480px) {
+  .drawer-content-wrapper {
+    width: 420px;
+  }
+}
+
+.drawer-content-wrapper {
+  position: absolute;
+  background-color: #fff;
+  height: 100%;
+}
+
+.drawer-right .drawer-content-wrapper {
+  right: 0;
+}
+
+.drawer-content {
+  overflow: auto;
+  z-index: 1;
+  position: relative;
+  height: 100%;
+}
